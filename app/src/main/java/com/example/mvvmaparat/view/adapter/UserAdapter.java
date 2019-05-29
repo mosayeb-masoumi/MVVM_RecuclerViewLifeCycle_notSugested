@@ -46,6 +46,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.CustomHolder> 
         return arrayList.size();
     }
 
+
     public class CustomHolder extends RecyclerView.ViewHolder {
         private ItemUserBinding itemUserBinding;
 
