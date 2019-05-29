@@ -1,6 +1,9 @@
 package com.example.mvvmaparat.view;
 
+import android.arch.lifecycle.LifecycleOwner;
+import android.arch.lifecycle.Observer;
 import android.databinding.DataBindingUtil;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -19,5 +22,8 @@ public class MainActivity extends AppCompatActivity {
         ActivityMainBinding mainBinding = DataBindingUtil.setContentView(this,R.layout.activity_main);
         UserViewModel userViewModel= new UserViewModel(this);
         mainBinding.setUser(userViewModel);
+
+
+
     }
 }

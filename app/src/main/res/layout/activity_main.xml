@@ -15,28 +15,11 @@
     android:layout_height="match_parent"
     tools:context=".view.MainActivity">
 
-
-
-    <EditText
-        android:text="@={user.name}"
+    <android.support.v7.widget.RecyclerView
+        bind:recyclerUser ="@{user.arrayListMutableLiveData}"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter Name"/>
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter Phone"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:textSize="20dp"
-        android:gravity="center_horizontal"
-        android:textColor="#920707"
-        android:text="@{user.name}"
-        />
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
 
 </LinearLayout>
 
