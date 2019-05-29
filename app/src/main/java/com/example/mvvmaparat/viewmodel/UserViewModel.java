@@ -17,8 +17,8 @@ public class UserViewModel extends BaseObservable {
     private Context context;
 
     public UserViewModel(User user) {
-        this.name = name;
-        this.phone = phone;
+        this.name = user.getName();
+        this.phone = user.getPhone();
     }
 
 
